@@ -119,7 +119,7 @@ p {
   background-color: transparent;
   border: none;
   color: yellow;
-  text-decoration: underline;
+  text-decoration: none !important;
   transition: none;
 }
 .btn-menu:hover{
