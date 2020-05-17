@@ -120,13 +120,16 @@ p {
   border: none;
   color: yellow;
   text-decoration: underline;
+
   transition: none;
+
 }
 .btn-menu:hover{
     border: none;
     background-color: transparent;
     color:  #f02c609d ;
     transition: none;
+    text-decoration: none;
 
 
 }
@@ -142,6 +145,7 @@ p {
     color: black;
 }
 ul{
+    text-align: center;
     list-style: none;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
