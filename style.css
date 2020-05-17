@@ -119,8 +119,12 @@ p {
   background-color: transparent;
   border: none;
   color: yellow;
+<<<<<<< HEAD
   text-decoration: underline;
 
+=======
+  text-decoration: none !important;
+>>>>>>> 49f79138d7c1076930e5a7105743f1c4390e0ea6
   transition: none;
 
 }
