@@ -1,480 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Materia</title>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
     ></script>
 
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
     />
     <!-- <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+    rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="generale">
-      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-      <link
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
+        />
 
-      <div class="topnav" id="myTopnav">
-        <a href="https://materiacomeacasa.it/" class="active">Home</a>
-        <a href="#food">Food</a>
-        <a href="#drink">Drink</a>
-        <a href="#beer">Beer</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <div class="appetizer">
-        <img src="images/logoGesso.png" alt="logo" class="logo_materia" />
-
-        <h2 class="mt-3" id="food">APPETIZER</h2>
-        <h5>STUZZICHINI €2</h5>
-        <h5>BRUSCHETTE €6</h5>
-        <h5>TAGLIERE SALUMI & FORMAGGI €10</h5>
-        <h5>APERITIVO MISTO €12</h5>
-        <p>Stuzicheria casereccia del giorno, tagliere di salumi e formaggi.</p>
-      </div>
-      <div class="panini mt-4">
-        <h2>
-          PAGNOTTE/PIADINE CASERECCE <br />
-          €5
-        </h2>
-
-        <h5>MODIGLIANI</h5>
-        <p>Crudo, Stracchino, Pomodori secchi, Rucola.</p>
-        <h5>DA VINCI</h5>
-        <p>Straccetti di Salmone affumicato, Crema di Avocado, Rucola, Pepe.</p>
-        <h5>KANDINSKY</h5>
-        <p>Zucchine Croccanti, Melanzane, Insalata, Stracchino.</p>
-        <!--<h5>MICHELANGELO</h5>
-        <p>
-          Gli amanti della Parmigiana non sapranno resistere a questa proposta
-          culinaria che abbina un pranzo frugale come un panino a uno dei
-          capisaldi della cucina casereccia.
-        </p>-->
-        <h2>I GRANDI CLASSICI</h2>
-        <h5>QUELLO DI QUA VICINO</h5>
-        <p>Capocollo, Melanzane Grigliate, Stracciatella, Pomodori Secchi.</p>
-        <h5>QUELLO DELLA MAMMA</h5>
-        <p>Mortadella, Provola, Crema di Pistacchi.</p>
-        <h5>QUELLO DELLA BIRROZZA</h5>
-        <p>Speck, Brie, Crema ai Funghi.</p>
-        <h2>CLUB SANDWICHES €5</h2>
-        <h5>ITALIANO</h5>
-        <p>Prosciutto Cotto, Emmental, Lattughino, Mayo.</p>
-        <h5>VEGETARIANO</h5>
-        <p>Mozzarella, Melanzane Grigliate, Lattughino, Guacamole.</p>
-      </div>
-      <div class="insalate mt-4">
-        <h2>
-          INSALATE<br />
-          €5
-        </h2>
-        <h5>PICASSO</h5>
-        <p>Misticanza, Origano, Arance, Zucchine Grigliate, Olive Nere.</p>
-        <h5>VAN GOGH</h5>
-        <p>Misticanza, Tonno, Pomodorini, Mozzarelline.</p>
-        <h2>CARPACCI<br /></h2>
-        <h5>
-          BRESAOLA <br />
-          €6
-        </h5>
-        <p>Olio, Limone, Rucola, Scaglie di Grana.</p>
-        <h5>
-          SALMONE <br />
-          €7
-        </h5>
-        <p>Pepe rosa, Olio, Lime, Rucola.</p>
-      </div>
-      <div class="drink mt-4" id="drink">
-        <h2>
-          DRINK LIST <br />
-          €6
-        </h2>
-        <h5>GIUSEPPE VERDI</h5>
-        <p>Bitter Campari, Vermouth, Luxardo Triplum, Rabarbaro, Soda</p>
-        <h5>MOZART</h5>
-        <p>Dark rum, Plum bitter, Angostura Bitter, Ginger Beer, lime juice</p>
-        <h5>BACH</h5>
-        <p>
-          Gin, liquore Suza, lemon juice, simple syrup, foglie di menta, Soda
-        </p>
-        <h5>BEETHOVEN</h5>
-        <p>
-          Bourbon whisky, Falernum, bitter Violento, lemon juice, simple syrup
-        </p>
-        <h5>SHUBERT</h5>
-        <p>Tequila bianca, shrub melograno, red fruit, lemon juice</p>
-        <h5>ANTONIO VIVALDI</h5>
-        <p>
-          White Rum, lemon juice, mango syrup, Pimento Dram, Angostura Bitter,
-          Ginger Beer
-        </p>
-        <h5>VINI</h5>
-        <p>
-          Rosso, Rosato, Bianco <br />
-          20/25€
-        </p>
-        <h6>DRINK ANALCOLICO €4</h6>
-
-        <div class="beside mt-3">
-          <!-- inizio soft -->
-          <button
-            type="button"
-            class="btn-menu"
-            data-toggle="modal"
-            data-target="#exampleModalLong"
-          >
-            SOFT DRINK
-            <br />
-            👆🏻
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalLong"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    SOFT DRINK
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <ul>
-                    <li>Coca-Cola €2,5</li>
-                    <li>Lemon Soda €2,5</li>
-                    <li>Tonica €2,5</li>
-                    <li>Ginger Beer €3,5</li>
-                    <li>Cedrata €3,5</li>
-                    <li>Chinotto €3,5</li>
-                    <li>Crodino €2,5</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fine soft -->
-          <!-- inizio soft -->
-          <button
-            type="button"
-            class="btn-menu"
-            data-toggle="modal"
-            data-target="#exampleModalLongGin"
-          >
-            GIN TONIC <br />
-            👆🏻
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalLongGin"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    GIN TONIC
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <ul>
-                    <li>Luxardo €6</li>
-                    <li>Gin Mare €7</li>
-                    <li>Thomas Dakin €7</li>
-                    <li>Nordes €7</li>
-                    <li>Hendrix €7</li>
-                    <li>Marconi €7</li>
-                    <li>Sabatini €7</li>
-                    <li>N°3 €7</li>
-                    <li>Tanqueray €7</li>
-                    <li>Geranium €7</li>
-                    <li>May Fair €7</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fine soft -->
-          <!-- inizio soft -->
-          <button
-            type="button"
-            class="btn-menu"
-            data-toggle="modal"
-            data-target="#exampleModalLongSA"
-          >
-            SUPER ALCOLICI <br />
-            👆🏻
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalLongSA"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    SUPER ALCOLICI
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <ul>
-                    <li class="red">GRAPPE</li>
-                    <li>Bianca Poli €4</li>
-                    <li>Barricate Poli€4</li>
-                    <li>Brandy Poly €5</li>
-                    <li>Cognac €5</li>
-                    <li class="red">WHISKY</li>
-                    <li>Jim Beam €4</li>
-                    <li>Tullamore €5</li>
-                    <li>Buffalo Trace €5</li>
-                    <li>Bulleit €6</li>
-                    <li>Higlan Park €7</li>
-                    <li>Glen Moray €7</li>
-                    <li>Finlagan €9</li>
-                    <li>Ardbeg 10€</li>
-                    <li class="red">RUM</li>
-                    <li>Ron Barcelo €4</li>
-                    <li>Capitan Morgan €5</li>
-                    <li>Heccicera €8</li>
-                    <li>Dos Maderas 5+3 €8</li>
-                    <li>Dos Maderas 5+5 €9</li>
-                    <li>Saint James €10</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fine soft -->
-          <!-- inizio soft -->
-          <button
-            type="button"
-            class="btn-menu"
-            data-toggle="modal"
-            data-target="#exampleModalLongAM"
-          >
-            AMARI<br />
-            👆🏻
-          </button>
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalLongAM"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">AMARI</h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <ul>
-                    <li>Birraio €3</li>
-                    <li>Amar8 €4</li>
-                    <li>Meyers €4</li>
-                    <li>Mandragola€4</li>
-                    <li>Formidabile €4</li>
-                    <li>Tosolini €4</li>
-                    <li>Vacamora €4</li>
-                    <li>Piperna €4</li>
-                    <li>Amarucola €4</li>
-                    <li>St.Antonio €4</li>
-                    <li>Apricot Luxardp €4</li>
-                    <li>Sangue Morlacco €4</li>
-                    <li>Disaronno €4</li>
-                    <li>Prugna Poli €4</li>
-                    <li>San Simone €4</li>
-                    <li>Farmily €4</li>
-                    <li>Meyers €4</li>
-                    <li>Meyers €4</li>
-                    <li>Amarula €4</li>
-                    <li>Syramusa €4</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fine soft -->
+        <div class="topnav" id="myTopnav">
+            <a href="https://materiacomeacasa.it/" class="active">Home</a>
+            <a href="#food">Food</a>
+            <a href="#drink">Drink</a>
+            <a href="#beer">Beer</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-      </div>
+        <div class="appetizer">
+            <img src="images/logoGesso.png" alt="logo" class="logo_materia" />
 
-      <div class="birre mt-4" id="beer">
-        <h2>BIRRE IN BOTTIGLIA</h2>
-        <h5>FORST 1857 33Ccl €3.5</h5>
+            <h2 class="mt-3" id="food">APPETIZER</h2>
+            <h5>STUZZICHINI €2</h5>
+            <p>olive, patate, taralli</p>
+            <h5>BRUSCHETTE €6</h5>
+            <p>5 pezzi, mare-verdure-salumi</p>
+            <h5>TAGLIERE SALUMI & FORMAGGI €12 </h5>
+            <p>(consigliato per due persone)</p>
+            <h5>APERITIVO MISTO €10</h5>
+            <p>taglierino, focacce Materia, cornettini salati, bruschette </p>
+        </div>
+        <div class="panini mt-4">
+            <h2>
+                CIABATTA CROCCANTE<br />
+                €6
+            </h2>
+
+            <h5>QUELLO DI MARINA</h5>
+            <p>Salmone affumicato, zucchine grigliate, mayo allo zenzero, insalata iceberg </p>
+
+            <h5>QUELLO DI CASA</h5>
+            <p>Prosciutto crudo di Parma, Materia compost, rucola fresca
+            </p>
+
+            <h5>QUELLO DI MARTINA</h5>
+            <p>Capocollo di martina, pomodorini confit, noci, stracciatella, rucoletta fresca</p>
+
+            <h5>QUELLO DI PIERA</h5>
+            <p>Burger di ceci, verdure alla griglia, iceberg, mayo al curry</p>
+
+            <h5>QUELLO DELLA MAMMA</h5>
+            <p>Mortadella, provola , pesto di pistacchi</p>
+
+            <h5>QUELLO DELLA NONNA</h5>
+            <p>Scamorza affumicata, melanzane al profumo di menta, rucola fresca, salsa balsamica
+            </p>
+
+            <h5>QUELLO DI DAVIDE</h5>
+            <p>Prosciutto crudo di Parma, crema di peperoni agrodolce, zucchine croccanti, scaglie di pecorino , rucola </p>
+
+            <!--<h5>MICHELANGELO</h5>
+                <p>
+                    Gli amanti della Parmigiana non sapranno resistere a questa proposta
+                    culinaria che abbina un pranzo frugale come un panino a uno dei
+                    capisaldi della cucina casereccia.
+                </p>-->
+            </div>
+            <div class="insalate mt-4">
+                <h2>
+                    INSALATE<br />
+                    €5
+                </h2>
+
+                <h5>N°1</h5>
+                <p>Finocchietto, salmone affumicato ,arancia , lime</p>
+
+                <h5>N°2</h5>
+                <p>Pomodori, feta, cipolla rossa, olive nere, peperoncini verdi</p>
+
+                <h5>N°3</h5>
+                <p>Filetto di tonno, scaglie di grana, pomodorini, salsa cesar, capperi</p>
+
+            </div>
+            <div class="drink mt-4" id="drink">
+                <h2>
+                    UNFORGETTABLE <br> DRINK LIST <br />
+                    €6
+                </h2>
+                <h5>GIUSEPPE VERDI</h5>
+                <p>Bitter Campari, Vermouth, Luxardo Triplum, Rabarbaro, Soda</p>
+
+                <h5>SPICED MULE</h5>
+                <p>Bourbon, Rakomelo Roots, Angostura Bitter, Ginger Beer, lime juice</p>
+
+                <h5>BACH</h5>
+                <p>
+                    Gin, liquore Suza, lemon juice, simple syrup, foglie di menta, Soda
+                </p>
+                <h5>ALLA NOSTRA MANIERA</h5>
+                <p>
+                    Bourbon whisky, I.P.A syrup , bitter Angostura
+                </p>
+                <h5>SHUBERT</h5>
+                <p>Tequila bianca, shrub melograno, red fruit, lemon juice</p>
+                <!-- <h5>ANTONIO VIVALDI</h5>
+                <p>
+                    White Rum, lemon juice, mango syrup, Pimento Dram, Angostura Bitter,
+                    Ginger Beer
+                </p> -->
+                <h5>VINI</h5>
+                <p>
+                    Rosso, Rosato, Bianco <br />
+                    20/25€
+                </p>
+                <h6>DRINK ANALCOLICO €4</h6>
+
+                <div class="beside mt-3">
+                    <!-- inizio soft -->
+                    <button
+                    type="button"
+                    class="btn-menu"
+                    data-toggle="modal"
+                    data-target="#exampleModalLong"
+                    >
+                    SOFT DRINK
+                    <br />
+                    👆🏻
+                </button>
+
+                <!-- Modal -->
+                <div
+                class="modal fade"
+                id="exampleModalLong"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true"
+                >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">
+                                SOFT DRINK
+                            </h5>
+                            <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                            >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Coca-Cola €2,5</li>
+                            <li>Lemon Soda €2,5</li>
+                            <li>Tonica €2,5</li>
+                            <li>Ginger Beer €3,5</li>
+                            <li>Cedrata €3,5</li>
+                            <li>Chinotto €3,5</li>
+                            <li>Crodino €2,5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fine soft -->
+        <!-- inizio soft -->
+        <button
+        type="button"
+        class="btn-menu"
+        data-toggle="modal"
+        data-target="#exampleModalLongGin"
+        >
+        GIN TONIC <br />
+        👆🏻
+    </button>
+
+    <!-- Modal -->
+    <div
+    class="modal fade"
+    id="exampleModalLongGin"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                    GIN TONIC
+                </h5>
+                <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                >
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>Luxardo €6</li>
+                <li>Gin Mare €7</li>
+                <li>Thomas Dakin €7</li>
+                <li>Nordes €7</li>
+                <li>Hendrix €7</li>
+                <li>Marconi €7</li>
+                <li>Sabatini €7</li>
+                <li>N°3 €7</li>
+                <li>Tanqueray €7</li>
+                <li>Geranium €7</li>
+                <li>May Fair €7</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- fine soft -->
+<!-- inizio soft -->
+<button
+type="button"
+class="btn-menu"
+data-toggle="modal"
+data-target="#exampleModalLongSA"
+>
+SUPER ALCOLICI <br />
+👆🏻
+</button>
+
+<!-- Modal -->
+<div
+class="modal fade"
+id="exampleModalLongSA"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLongTitle"
+aria-hidden="true"
+>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+                SUPER ALCOLICI
+            </h5>
+            <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+            >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <ul>
+            <li class="red">GRAPPE</li>
+            <li>Bianca Poli €4</li>
+            <li>Barricate Poli€4</li>
+            <li>Brandy Poly €5</li>
+            <li>Cognac €5</li>
+            <li class="red">WHISKY</li>
+            <li>Jim Beam €4</li>
+            <li>Tullamore €5</li>
+            <li>Buffalo Trace €5</li>
+            <li>Bulleit €6</li>
+            <li>Higlan Park €7</li>
+            <li>Glen Moray €7</li>
+            <li>Finlagan €9</li>
+            <li>Ardbeg 10€</li>
+            <li class="red">RUM</li>
+            <li>Ron Barcelo €4</li>
+            <li>Capitan Morgan €5</li>
+            <li>Heccicera €8</li>
+            <li>Ron Santa Teresa €8</li>
+            <li>Dos Maderas 5+3 €8</li>
+            <li>Dos Maderas 5+5 €9</li>
+            <li>Saint James €10</li>
+
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<!-- fine soft -->
+<!-- inizio soft -->
+<button
+type="button"
+class="btn-menu"
+data-toggle="modal"
+data-target="#exampleModalLongAM"
+>
+AMARI<br />
+👆🏻
+</button>
+
+<!-- Modal -->
+<div
+class="modal fade"
+id="exampleModalLongAM"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLongTitle"
+aria-hidden="true"
+>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">AMARI</h5>
+            <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+            >
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <ul>
+            <li>Birraio €3</li>
+            <li>Amar8 €4</li>
+            <li>Amaro Bonaventura Erbe e Fiori €4</li>
+            <li>Amaro Bonaventura Spezie 4€</li>
+            <li>Meyers €4</li>
+            <li>Mandragola€4</li>
+            <li>Formidabile €4</li>
+            <li>Tosolini €4</li>
+            <li>Vacamora €4</li>
+            <li>Piperna €4</li>
+            <li>Amarucola €4</li>
+            <li>St.Antonio €4</li>
+            <li>Apricot Luxardp €4</li>
+            <li>Sangue Morlacco €4</li>
+            <li>Disaronno €4</li>
+            <li>Prugna Poli €4</li>
+            <li>San Simone €4</li>
+            <li>Farmily €4</li>
+            <li>Meyers €4</li>
+            <li>Meyers €4</li>
+            <li>Amarula €4</li>
+            <li>Syramusa €4</li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<!-- fine soft -->
+</div>
+</div>
+
+<div class="birre mt-4" id="beer">
+    <h2>BIRRE IN BOTTIGLIA</h2>
+    <h5>FORST 1857 33Ccl €3.5</h5>
+    <p>
+        Bionda dal gusto fresco di malto chiaro armoniosamente unito ad una
+        leggera nota di luppolo. 4,8 %Alc.
+    </p>
+    <h5>SUPER 8 EXPORT 33cl €3,5</h5>
+    <p>
+        La Super 8 Export è una birra gluten free dall’aspetto solare con
+        brillanti riflessi dorati e una schiuma persistente e generosa. La sua
+        nota di malto appare avvolta da lievi sensazioni di lievito e il
+        gusto, equilibrato e rotondo, è arricchito da un delicato aroma di
+        luppolo. 4,80% Alc.
+    </p>
+    <h5>FELSENKELLER BIER 33cl €4</h5>
+    <p>
+        Un giusto equilibrio tra la rotondità del malto, un delicato aroma di
+        luppolo ed un retrogusto particolarmente dissetante. 5,2% Alc.
+    </p>
+    <h5>SUPER 8 BLANCHE 33cl €3.5</h5>
+    <p>
+        La birra blanche della famiglia Super 8, è una vera birra di frumento.
+        Naturalmente torbida, non filtrata e dal colore giallo paglierino.
+        Birra dalla schiuma persistente e cremosa e dal suo inconfondibile
+        gusto dissetante. 5,1% Alc
+    </p>
+    <h5>PUNK IPA 33cl €5</h5>
+    <p>
+        Piacevole carattere fruttato, esotico e tropicale, di grande impatto
+        aromatico, con una preziosa fusione di malto e luppolo. 5,6%Alc
+    </p>
+    <h5>WEIHENSTEPHANER VITUS 50cl €5</h5>
+    <p>
+        Corpo pieno morbido e vellutato di ottima freschezza con note morbide
+        di cereali. Aromi di lieviti nobili e accentuati, con retrogusto di
+        banana matura e con ricordi di garofano. 7,7% Alc
+    </p>
+    <h5>28 SUPER 33cl €4</h5>
+    <p>
+        Una birra “forte” innovativa ed elegante. Prodotta utilizzando un
+        ceppo di lievito solitamente impiegato per la spumantizzazione,
+        risulta estremamente beverina nascondendo la sua forza dietro ad un
+        corpo secco e un perlage raffinato. 9,5% Alc
+    </p>
+    <!-- <h5>ROCHEFORT 8 33cl €5</h5>
+    <p>
+        Un corpo di ottima tessitura con un sapore iniziale di liquirizia e
+        spezie, per evolversi sul finale insieme fresco e piccante con la
+        forza alcolica che esce con buona prepotenza. Retrogusto durevole e
+        speziato. 9,2% Alc
+    </p> -->
+    <h5>MACHETE Double IPA 33cl €6</h5>
+    <p>
+        Machete è una vera e propria esplosione di aromi di pompelmo, litchi
+        e frutta tropicale dolce. Di colore dorato intenso, esprime un amaro deciso ma equilibrato con la parte fruttata. 7,6% Alc
+    </p>
+    <!-- <h5>BIRRA7</h5>
         <p>
-          Bionda dal gusto fresco di malto chiaro armoniosamente unito ad una
-          leggera nota di luppolo. 4,8 %Alc.
-        </p>
-        <h5>SUPER 8 EXPORT 33cl €3,5</h5>
-        <p>
-          La Super 8 Export è una birra gluten free dall’aspetto solare con
-          brillanti riflessi dorati e una schiuma persistente e generosa. La sua
-          nota di malto appare avvolta da lievi sensazioni di lievito e il
-          gusto, equilibrato e rotondo, è arricchito da un delicato aroma di
-          luppolo.
-        </p>
-        <h5>FELSENKELLER BIER 33cl €4</h5>
-        <h5>La birra torbida, non filtrata dal sapore pieno.</h5>
-        <p>
-          Un giusto equilibrio tra la rotondità del malto, un delicato aroma di
-          luppolo ed un retrogusto particolarmente dissetante. 5,2% Alc.
-        </p>
-        <h5>SUPER 8 BLANCHE 33cl €3.5</h5>
-        <p>
-          La birra blanche della famiglia Super 8, è una vera birra di frumento.
-          Naturalmente torbida, non filtrata e dal colore giallo paglierino.
-          Birra dalla schiuma persistente e cremosa e dal suo inconfondibile
-          gusto dissetante. 5,1% Alc
-        </p>
-        <h5>PUNK IPA 33cl €5</h5>
-        <p>
-          Piacevole carattere fruttato, esotico e tropicale, di grande impatto
-          aromatico, con una preziosa fusione di malto e luppolo. 5,6%Alc
-        </p>
-        <h5>WEIHENSTEPHANER VITUS 50cl €5</h5>
-        <p>
-          Corpo pieno morbido e vellutato di ottima freschezza con note morbide
-          di cereali. Aromi di lieviti nobili e accentuati, con retrogusto di
-          banana matura e con ricordi di garofano. 7,7% Alc
-        </p>
-        <h5>28 SUPER 33cl €4</h5>
-        <p>
-          Una birra “forte” innovativa ed elegante. Prodotta utilizzando un
-          ceppo di lievito solitamente impiegato per la spumantizzazione,
-          risulta estremamente beverina nascondendo la sua forza dietro ad un
-          corpo secco e un perlage raffinato. 9,5% Alc
-        </p>
-        <h5>ROCHEFORT 8 33cl €5</h5>
-        <p>
-          Un corpo di ottima tessitura con un sapore iniziale di liquirizia e
-          spezie, per evolversi sul finale insieme fresco e piccante con la
-          forza alcolica che esce con buona prepotenza. Retrogusto durevole e
-          speziato. 9,2% Alc
-        </p>
-        <!-- <h5>BIRRA7</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde natus,
         </p> -->
-      </div>
-      <div class="birre mt-4">
+    </div>
+    <div class="birre mt-4">
         <h2>BIRRE ALLA SPINA</h2>
 
         <h5>FORST KRONEN 30cl €3</h5>
         <p>
-          E’ una birra speciale, dal sapore pieno e aromatico di malto, un
-          colore giallo dorato e una leggera e fine nota di luppolo. Nel
-          retrogusto si avverte una lieve fragranza erbacea che, unitamente ad
-          un dolce ricordo sulle labbra, spinge irresistibilmente a
-          riassaporarla. Questa birra di antica ricetta rappresenta la
-          soddisfazione di ogni aspettativa del vero intenditore di birra. 5,2%
-          Alc
+            E’ una birra speciale, dal sapore pieno e aromatico di malto, un
+            colore giallo dorato e una leggera e fine nota di luppolo. Nel
+            retrogusto si avverte una lieve fragranza erbacea che, unitamente ad
+            un dolce ricordo sulle labbra, spinge irresistibilmente a
+            riassaporarla. Questa birra di antica ricetta rappresenta la
+            soddisfazione di ogni aspettativa del vero intenditore di birra. 5,2%
+            Alc
         </p>
         <h5>MENABREA AMBRATA 30cl €4</h5>
         <p>
-          Dal colore ambrato con riflessi bronzei. Prodotta con malto, mais,
-          luppolo e acqua. Birra di di buon corpo nonostante il contenuto grado
-          alcolico. 5,0% Alc
+            Dal colore ambrato con riflessi bronzei. Prodotta con malto, mais,
+            luppolo e acqua. Birra di di buon corpo nonostante il contenuto grado
+            alcolico. 5,0% Alc
         </p>
-        <h5>HOBGOBLIN IPA 30cl €4,5</h5>
+        <h5>HEAD ON IPA 30cl €4,5</h5>
         <p>
-          I luppoli Inglesi tradizionali enfatizzati con luppoli pregiati
-          americani, creano un'esplosione d' aroma. Questa birra è stata
-          dichiarata come la miglior IPA al mondo ai World Beer Awards 2018 .
-          5,3% Alc
+            Birra chiara artigianale, rinfrescante, ricca di luppoli e un aroma di frutta tropicale. Questo
+            ibrido tra una birra chiara artigianale e una birra artigianale offre una pinta
+            gustosa.
+            5,2% Alc
         </p>
-      </div>
-      <div class="allergie mt-4">
-        <p>
-          SI AVVISA LA GENTILE CLIENTELA CHE, IN CONFORMITA' A QUANTO DISPOSTO
-          DAL REG.(CE) 1169/2011, ALCUNI DEGLI ELEMENTI PRESENTI NEL MENU
-          CONTENGONO PRODOTTI CHE PROVOCANO ALLERGIE O INTOLLERANZE. TUTTE LE
-          INFORMAZIONI DETTAGLIATE SONO INDICATE NELL'APPOSITO RICETTARIOO A
-          DISPOSIZIONE SU RICHIESTA. LA DISPONIBILITA' DEI PRODOTTI FRESCHI PUO'
-          VARIARE A SECONDA DELLA DISPONIBILITA' E DELLA STAGIONALITA' DEGLI
-          STESSI.
-        </p>
-      </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+    <div class="allergie mt-4">
+        <p>
+            SI AVVISA LA GENTILE CLIENTELA CHE, IN CONFORMITA' A QUANTO DISPOSTO
+            DAL REG.(CE) 1169/2011, ALCUNI DEGLI ELEMENTI PRESENTI NEL MENU
+            CONTENGONO PRODOTTI CHE PROVOCANO ALLERGIE O INTOLLERANZE. TUTTE LE
+            INFORMAZIONI DETTAGLIATE SONO INDICATE NELL'APPOSITO RICETTARIOO A
+            DISPOSIZIONE SU RICHIESTA. LA DISPONIBILITA' DEI PRODOTTI FRESCHI PUO'
+            VARIARE A SECONDA DELLA DISPONIBILITA' E DELLA STAGIONALITA' DEGLI
+            STESSI.
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
 </html>
